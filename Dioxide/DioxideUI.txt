@@ -1,1 +1,1 @@
-https://github.com/habby1337/Dioxide/releases/download/v2.6.6654.23945/Dioxide.exe
+https://github.com/habby1337/Dioxide-Client/releases/download/v1.0.0.0/DioxideUI.exe
