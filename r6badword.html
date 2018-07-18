@@ -47,7 +47,8 @@
         }
 		.basso{
 		
-		bottom: 10%;}
+		top: 900%;
+		}
     </style>
 
 
@@ -99,7 +100,7 @@
             var i = banned_word.indexOf(ID);
             /*var i = banned_word.findIndex(item => ID.toLowerCase() === item.toLowerCase())*/
 
-            if (i < -1) {
+            if (i > -1) {
                 document.getElementById('rip').innerHTML = 'You will get BANNED';
             }
             else {
