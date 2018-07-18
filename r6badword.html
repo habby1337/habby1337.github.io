@@ -86,6 +86,8 @@
                 }
             } else {
                 miincazzo = 0;
+				document.getElementById('rip').innerHTML = ' ';
+				document.getElementById('message').innerHTML = " ";
                 checkword();
             }
         }
@@ -94,7 +96,7 @@
         //ASK TO MARCO BC YOU DONT NOW JS
 
         function checkword() {
-
+			
             var banned_word = ['fag', 'nibba', 'autism', 'nigga', 'sex', 'paki', 'suck', 'succ', 'faggot', 'mother', 'gay']
             var ID = document.getElementById('Get_word').value;
             var i = banned_word.indexOf(ID);
