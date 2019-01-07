@@ -1,1 +1,5 @@
-thats a test\nfor the windows form\n ---CHANGE LOG (v1.56)---\n    -TEST\n    -ESKERE
+thats a test
+for the windows form
+    ---CHANGE LOG (v1.56)---
+        -TEST
+        -ESKERE
