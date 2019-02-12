@@ -2,28 +2,74 @@
 <html>
 
 <head>
+    <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+    <!--<script type='text/javascript' src='http://0.0.0.0:8080/scaledrone.js'></script>-->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 13px;
+            display: flex;
+            flex-direction: column;
+            max-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .members-count,
+        .members-list,
+        .messages {
+            border: 1px solid #e4e4e4;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .messages {
+            flex-shrink: 1;
+            overflow: auto;
+        }
+
+        .message {
+            padding: 5px 0;
+        }
+
+        .message .member {
+            display: inline-block;
+        }
+
+        .member {
+            padding-right: 10px;
+            position: relative;
+        }
+
+        .message-form {
+            display: flex;
+            flex-shrink: 0;
+        }
+
+        .message-form__input {
+            flex-grow: 1;
+            border: 1px solid #dfdfdf;
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+
+        .message-form__button {
+            margin: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 class="title"><span id="userName"></span> Welcom to Personal Chat</h1>
-    <p id="clearLC" onclick="localStorage.clear()">Clear local Storage</p>
-
-    <div id="container">
-        <div id="chatDisp"></div>
-        <div id="input">
-            <p id="typing">Typing...</p>
-            <label id="sendMessage" for="messageInput">Submit</label>
-            <input id="messageInput" type="text">
-        </div>
-    </div>
-
-    <h1 class="title">BY:: MANSOOR AMIN </br> Roll No:: 1941 </h1>
+    <div class="members-count">-</div>
+    <div class="members-list">-</div>
+    <div class="messages"></div>
+    <form class="message-form" onsubmit="return false;">
+        <input class="message-form__input" placeholder="Type a message.." type="text" />
+        <input class="message-form__button" value="Send" type="submit" />
+    </form>
+    <script src="./script.js"></script>
 </body>
 
 </html>
