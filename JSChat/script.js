@@ -1,6 +1,6 @@
 
 
-var userName = prompt("Enter your Name...", "Mansoor");
+var userName = prompt("Enter your Name...", "");
 var nam = document.getElementById('userName');
 nam.innerHTML = userName;
 
