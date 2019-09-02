@@ -1,6 +1,1 @@
-!youtube-dl.exe
-!ffprobe.exe
-!ffplay.exe
-!ffmpeg.exe
-!YouTube_Downloader.exe
-./youtubedir
+node_modules

@@ -1,22 +1,15 @@
 // Global styling for this template
+
 body {
-  overflow-x: hidden;
   @include body-font;
+  padding-top: 54px;
+  color: $gray-600;
 }
-
-p {
-  line-height: 1.75;
-}
-
-a {
-  color: $primary;
-  &:hover {
-    color: darken($primary, 10%);
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: $sidebar-base-width;
   }
-}
-
-.text-primary {
-  color: $primary !important;
 }
 
 h1,
@@ -25,74 +18,63 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
-  @include heading-font;
-}
-
-section {
-  padding: 100px 0;
-  h2.section-heading {
-    font-size: 40px;
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-  h3.section-subheading {
-    font-size: 16px;
-    font-weight: 400;
-    font-style: italic;
-    margin-bottom: 75px;
-    text-transform: none;
-    @include serif-font;
-  }
-}
-@media(min-width:768px) {
-  section {
-    padding: 150px 0;
-  }
-}
-
-// Button Styles
-.btn {
   @include heading-font;
   font-weight: 700;
+  text-transform: uppercase;
+  color: $gray-800;
 }
 
-.btn-xl {
-  font-size: 18px;
-  padding: 20px 40px;
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
 }
 
-.btn-primary {
-  background-color: $primary;
-  border-color: $primary;
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: darken($primary, 7.5%) !important;
-    border-color: darken($primary, 7.5%) !important;
-    color: white;
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  @include heading-font;
+  font-size: 1.5rem;
+}
+
+.social-icons {
+  a {
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: $gray-700;
+    color: $white !important;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-right: 1rem;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      background-color: $primary;
+    }
   }
-  &:active,
-  &:focus {
-    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55,.5) !important;
+}
+
+.dev-icons {
+  font-size: 3rem;
+  .list-inline-item i {
+    &:hover {
+      color: $primary;
+    }
   }
-}
-
-// Highlight color customization
-::-moz-selection {
-  background: $primary;
-  text-shadow: none;
-}
-
-::selection {
-  background: $primary;
-  text-shadow: none;
-}
-
-img::selection {
-  background: transparent;
-}
-
-img::-moz-selection {
-  background: transparent;
 }
