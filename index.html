@@ -31,16 +31,17 @@
 
 
 
-<body id="page-top" onload="myFunction()">
+<body id="page-top" onload="setTimeFun()">
 
-<div id="donut"></div>
-<div style="display:none;" id="myDiv" class="animate-bottom">
+<div id="donut" class="align-items-center"></div>
+
+<div style="display:none;" id="page" class="animate-bottom">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-block d-lg-none">Federico Tensi</span>
       <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-square mx-auto mb-2" src="img/profile.jpg" alt="me">
+        <img class="img-fluid img-profile rounded-square mx-auto mb-2" src="img/profile.jpg" alt="me" title="Me">
       </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -81,7 +82,7 @@
           <a href="https://t.me/habby1337">Telegram</a> ·
           <a href="mailto:federicotensi@gmail.com">federicotensi@gmail.com</a>
         </div>
-        <p class="lead mb-5">Ho esperienza con diversi frameworks e alcuni linguaggi desktop, ho una buona leadership e so lavoreare bene in team.</p>
+        <p class="lead mb-5">Ho esperienza con diversi frameworks e alcuni linguaggi desktop, anche una buona leadership e so lavorare bene in team.</p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/federico-tensi-4ba5b4170/">
             <i class="fab fa-linkedin-in"></i>
@@ -134,7 +135,7 @@
           <div class="resume-content">
             <h3 class="mb-0">Senior Web Developer</h3>
             <div class="subheading mb-3">Sanik Multigaming</div>
-            <p>Una community dove tutti i player online potevano giocare insieme, fare tornei o giocare competitivo.</p>
+            <p>Una community dove tutti i player online potevano giocare insieme, fare tornei o semplicemente divertirsi fra loro.</p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">Agosto 2016 - Luglio 2018</span>
@@ -268,8 +269,8 @@
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
         <h2 class="mb-5">Interessi</h2>
-        <p>A parte la programmazione web o desktop, Mi piace passare la maggior parte del mio tempo fuori all'apero in moto. qualsiasi sia la stagione. Sono un motociclista appassionato.</p>
-        <p class="mb-0">Quando sono costretto a stare in casa, gioco a qualche titolo con dei miei amici oppure guardo qualche serie tv, mi piace anche cucinare, e spendo una gran parte del mio tempo libero a esplorare le ultime novità tecnologiche.</p>
+        <p>A parte la programmazione web o desktop, Mi piace passare la maggior parte del mio tempo fuori all'aperto in moto. Qualsiasi sia la stagione. Sono un motociclista appassionato.</p>
+        <p class="mb-0">Quando sono costretto a stare in casa, gioco a qualche titolo con dei miei amici oppure guardo delle serie TV, mi piace anche cucinare, e spendo una gran parte del mio tempo libero a esplorare le ultime novità tecnologiche.</p>
       </div>
     </section>
 
@@ -329,15 +330,15 @@
 
   <!-- Loader -->
   <script>
-  var myVar;
+  var timeout;
 
-  function myFunction() {
-    myVar = setTimeout(showPage, 3000);
+  function setTimeFun() {
+    timeout = setTimeout(showPage, 3000);
   }
 
   function showPage() {
     document.getElementById("donut").style.display = "none";
-    document.getElementById("myDiv").style.display = "block";
+    document.getElementById("page").style.display = "block";
   }
   </script>
 
