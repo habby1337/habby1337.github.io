@@ -3,7 +3,16 @@ Options +FollowSymLinks
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^habby1337.github.io[nc]
 RewriteRule ^(.*)$ http://www.habby1337.github.io/$1 [r=301,nc]
-RewriteRule ^shop\.html$ / [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/$ $1.php
+RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !(\.[a-zA-Z0-9]{1,5}|/)$
+RewriteRule (.*)$ /$1/ [R=301,L]
 
 
 //Change default directory page
