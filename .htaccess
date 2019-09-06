@@ -16,7 +16,7 @@ RewriteRule (.*)$ /$1/ [R=301,L]
 
 
 //Change default directory page
-DirectoryIndex index.html
+DirectoryIndex /
 
 //Prevent viewing of .htaccess file
 <Files .htaccess>
