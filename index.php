@@ -25,6 +25,9 @@
   <!-- Custom Loader -->
   <link href="css/loader.css" rel="stylesheet">
 
+  <!-- Custom footer -->
+  <link href="css/footer.css" rel="stylesheet">
+
 </head>
 
 
@@ -154,29 +157,7 @@
             <span class="text-primary">Agosto 2016 - Luglio 2018</span>
           </div>
         </div>
-<!--
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Junior Web Designer</h3>
-            <div class="subheading mb-3">Shout! Media Productions</div>
-            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">July 2010 - December 2011</span>
-          </div>
-        </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Web Design Intern</h3>
-            <div class="subheading mb-3">Shout! Media Productions</div>
-            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2008 - June 2010</span>
-          </div>
-        </div>
--->
       </div>
 
     </section>
@@ -198,18 +179,7 @@
             <span class="text-primary">2015 - Oggi</span>
           </div>
         </div>
-<!--
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">James Buchanan High School</h3>
-            <div class="subheading mb-3">Technology Magnet Program</div>
-            <p>GPA: 3.56</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2002 - May 2006</span>
-          </div>
-        </div>
--->
+
       </div>
     </section>
 
@@ -355,7 +325,52 @@
   }
   </script>
 
+<!-- The content of your page would go here. -->
+  <footer class="footer-distributed">
+
+    <div class="footer-right">
+
+      <a href="https://www.linkedin.com/in/federico-tensi-4ba5b4170/">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/habby1337">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://t.me/habby1337">
+        <i class="fab fa-telegram"></i>
+      </a>
+      <a href="https://www.instagram.com/fede.tensi/">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+    </div>
+
+    <div class="footer-left">
+
+      <p class="footer-links">
+        <a href="#">Home</a>
+        ·
+        <a href="#">Blog</a>
+        ·
+        <a href="#">Pricing</a>
+        ·
+        <a href="#">About</a>
+        ·
+        <a href="#">Faq</a>
+        ·
+        <a href="#">Contact</a>
+      </p>
+
+      <p>Company Name &copy; <?php date() ?>2015</p>
+    </div>
+
+  </footer>
+
 </div>
+
+
+
+
 </body>
 
 </html>
