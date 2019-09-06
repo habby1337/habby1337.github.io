@@ -3,6 +3,8 @@ Options +FollowSymLinks
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^habby1337.github.io[nc]
 RewriteRule ^(.*)$ http://www.habby1337.github.io/$1 [r=301,nc]
+RewriteRule ^shop\.html$ / [R=301,L]
+
 
 //Change default directory page
 DirectoryIndex index.html
@@ -15,4 +17,3 @@ deny from all
 
 //Prevent directory listings
 Options All -Indexes
- 
