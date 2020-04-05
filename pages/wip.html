@@ -43,16 +43,18 @@
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Federico Tensi</span>
                 <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-square mx-auto mb-2" src="../img/profile.jpg" alt="me" title="Me">
-      </span>
+                    <img class="img-fluid img-profile rounded-square mx-auto mb-2" src="../img/profile.jpg" alt="me"
+                        title="Me">
+                </span>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="https://habby1337.github.io">[ Torna alla Home ]</a>
+                        <a class="nav-link js-scroll-trigger" href="https://tensi.it">[ Torna alla Home ]</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#about">Work in Progress</a>
@@ -66,8 +68,8 @@
             <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
                 <div class="w-100">
                     <h1 class="mb-0">Federico
-          <span class="text-primary">Tensi</span>
-        </h1>
+                        <span class="text-primary">Tensi</span>
+                    </h1>
                     <div class="subheading mb-5">Rome, Italy ·
                         <a href="https://t.me/habby1337">Telegram</a> ·
                         <a href="mailto:federicotensi@gmail.com">federicotensi@gmail.com</a>
@@ -91,80 +93,80 @@
             </section>
 
 
+        </div>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="js/resume.min.js"></script>
+
+        <!-- Loader -->
+        <script>
+            var timeout;
+            var url = "https://quotes.rest/qod.json?category=inspire";
+
+            function setTimeFun() {
+                timeout = setTimeout(showPage, 1000);
+
+                if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+                    xmlhttp = new XMLHttpRequest();
+                } else { // code for IE6, IE5
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function () {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        return xmlhttp.responseText;
+                    }
+                }
+                xmlhttp.open("GET", url, false);
+                xmlhttp.send();
+                //alert(xmlhttp.responseText)
+                var data = JSON.parse(xmlhttp.responseText);
+
+                //alert(data.contents[0].quotes.[0].quote)
+                //alert(data.contents[0].quotes.[0])
+                //alert(data.contents[0])
+
+
+            }
+
+            function showPage() {
+                document.getElementById("donut").style.display = "none";
+                document.getElementById("page").style.display = "block";
+
+            }
+        </script>
+
+        <!-- The content of your page would go here. -->
+        <footer class="footer-distributed">
+
+            <div class="footer-right">
+
+                <a href="https://www.linkedin.com/in/federico-tensi-4ba5b4170/">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/habby1337">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://t.me/habby1337">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://www.instagram.com/fede.tensi/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
             </div>
 
-            <!-- Bootstrap core JavaScript -->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <p class="quote" id="quoteofday"></p>
 
-            <!-- Plugin JavaScript -->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+            <div class="footer-left">
 
-            <!-- Custom scripts for this template -->
-            <script src="js/resume.min.js"></script>
-
-            <!-- Loader -->
-            <script>
-                var timeout;
-                var url = "https://quotes.rest/qod.json?category=inspire";
-
-                function setTimeFun() {
-                    timeout = setTimeout(showPage, 1000);
-
-                    if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
-                        xmlhttp = new XMLHttpRequest();
-                    } else { // code for IE6, IE5
-                        xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-                    }
-                    xmlhttp.onreadystatechange = function() {
-                        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                            return xmlhttp.responseText;
-                        }
-                    }
-                    xmlhttp.open("GET", url, false);
-                    xmlhttp.send();
-                    //alert(xmlhttp.responseText)
-                    var data = JSON.parse(xmlhttp.responseText);
-
-                    //alert(data.contents[0].quotes.[0].quote)
-                    //alert(data.contents[0].quotes.[0])
-                    //alert(data.contents[0])
-
-
-                }
-
-                function showPage() {
-                    document.getElementById("donut").style.display = "none";
-                    document.getElementById("page").style.display = "block";
-
-                }
-            </script>
-
-            <!-- The content of your page would go here. -->
-            <footer class="footer-distributed">
-
-                <div class="footer-right">
-
-                    <a href="https://www.linkedin.com/in/federico-tensi-4ba5b4170/">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/habby1337">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://t.me/habby1337">
-                        <i class="fab fa-telegram"></i>
-                    </a>
-                    <a href="https://www.instagram.com/fede.tensi/">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-
-                </div>
-
-                <p class="quote" id="quoteofday"></p>
-
-                <div class="footer-left">
-
-                    <!-- <p class="footer-links">
+                <!-- <p class="footer-links">
         <a href="#">Home</a>
         ·
         <a href="#">Blog</a>
@@ -177,17 +179,17 @@
         ·
         <a href="#">Contact</a>
       </p> -->
-                    <p class="footer-links">
-                        <p class="mb-0">
-                            Federico Tensi &copy; 2019
-                            <!--<?php echo date("Y"); ?>-->
-                        </p>
+                <p class="footer-links">
+                    <p class="mb-0">
+                        Federico Tensi &copy; 2019
+                        <!--<?php echo date("Y"); ?>-->
                     </p>
-                </div>
+                </p>
+            </div>
 
-            </footer>
+        </footer>
 
-        </div>
+    </div>
 
 </body>
 

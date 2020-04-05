@@ -1,8 +1,13 @@
 
 .quote{
-	color: #80828c;
-	font-family: 'Dancing Script', cursive;
+	color: #80828c !important;
+	font-family: 'Ubuntu',
+	sans-serif !important;
+	font-size: 100% !important;
 }
+
+
+
 
 .footer-distributed{
 	background-color: #292c2f;
