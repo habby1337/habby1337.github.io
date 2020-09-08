@@ -60,14 +60,16 @@
   </header>
 
   <script>
-      function getData() {
+
+
+      async function getData() {
           var codice = $('#code').val();
 
-          (async () => {
+          
           const response = await fetch('http://parcelsapp.com/it/tracking/' + codice);
-          const json = await response.json();
-          console.log(JSON.stringify(json));
-          });
+          const json = await response.text;
+          console.log(json);
+          
       }
     
 
