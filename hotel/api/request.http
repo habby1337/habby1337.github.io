@@ -1,0 +1,11 @@
+GET http://localhost:8080/api/courses
+
+###
+
+POST 
+Content-Type: application/json
+
+{
+    "title": "just a test"
+}
+
